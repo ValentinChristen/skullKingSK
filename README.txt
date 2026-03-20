@@ -1,1 +1,1 @@
-Just a realy ugly thing live on: 
+Just a realy ugly thing live on: https://valentinchristen.github.io/skullKingSK/ 
