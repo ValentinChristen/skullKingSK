@@ -209,7 +209,7 @@ function turnButtonCb(button)
     {
         if(getAvailabel() != 0)
         {
-            return;
+            //return;
         }
         players.forEach((player, idx, array) => {
             player.calculatePoints();
