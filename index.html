@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Skull King Score Keeper</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="center">
+                <h3 id="turnNumberL">Trun 1</h3>
+            </div>
+
+            <div id="playerGrid" class="playerGrid">
+            </div>
+
+            <div class="center">
+                <button type="button" id="turnButton" onclick="turnButtonCb(this)">Fix Bets</button>
+            </div>
+            
+            <div class="center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="row">  </th>
+                            <th scope="row">Total </th>
+                            <th scope="row">1</th>
+                            <th scope="row">2</th>
+                            <th scope="row">3</th>
+                            <th scope="row">4</th>
+                            <th scope="row">5</th>
+                            <th scope="row">6</th>
+                            <th scope="row">7</th>
+                            <th scope="row">8</th>
+                            <th scope="row">9</th>
+                            <th scope="row">10</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scoreTableBody">
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="center">
+                <h4>Settings</h4>
+            </div>
+
+            <div class="Settings">
+                <div class="center">
+                    <label for="nPlayers">Change number of Players:</label>
+                    <select name="nPlayers" id="nPlayersS" onchange="nPlayersSCb(this)">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4" selected>4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                
+                <div class="center">
+                    <h4>Player Names</h4>
+                </div>
+                
+                <div class="playerGrid" id="playerNamesDiv">
+                    
+                </div>
+            </div>
+
+            <div class="dbox">
+
+            </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
